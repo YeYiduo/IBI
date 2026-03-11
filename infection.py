@@ -11,5 +11,7 @@ while d<=91: # the number of infected individuals is less than or equal to 91
         print("Day", c+1, ":", ceil(91), "infected individuals")
         break
     print("Day", c+1, ":", ceil(d), "infected individuals")
+
+print("The population will reach 91 infected individuals on day", c+1)
     
 
