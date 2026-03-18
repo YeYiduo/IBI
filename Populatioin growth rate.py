@@ -17,4 +17,7 @@ plt.bar(countries, growth_rates, color=['blue', 'green', 'red', 'orange', 'purpl
 plt.xlabel('Countries')
 plt.ylabel('Population Growth Rate (%)')
 plt.title('Population Growth Rates from 2020 to 2024')
+for i in range(len(countries)):
+    plt.text(i, growth_rates[i], f"{growth_rates[i]:.2f}%", ha='center', va='bottom' if growth_rates[i] >= 0 else 'top')
+plt.show()
 plt.show()
