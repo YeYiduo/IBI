@@ -1,4 +1,6 @@
 dictionary = {"TP53":12.4, "EGFR":15.1, "BRCA1":8.2, "PTEN":5.3, "ESR1":10.7}
+for gene, expression in dictionary.items():
+    print(f"{gene}: {expression}")  
 dictionary["MYC"] = 11.6
 import numpy as np
 import matplotlib.pyplot as plt
